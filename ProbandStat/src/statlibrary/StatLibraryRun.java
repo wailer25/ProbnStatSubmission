@@ -9,8 +9,10 @@ public class StatLibraryRun {
 		
 		System.out.println(tst.variance(check));
 		
+		//System.out.println(tst.factorial(30));
 		System.out.println(tst.permutation(50, 3));
 		System.out.println(tst.combination(50, 3));
+		System.out.println(tst.hypergeometricDistributionP(10, 3, 3, 5));
 	}
 
 }
