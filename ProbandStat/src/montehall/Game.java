@@ -48,13 +48,19 @@ public class Game {
 		int failCount = 0;
 		
 		// Picks a random door from an array of three doors
+		// a door is revealed however the choice does not change
 		//increments wins if it hits the prize door otherwise increments fail
 		for (int i = 0; i < attempts; i++)
 		{
-			if (doors[rng.nextInt(3)].equals("Prize"))
-				winCount++;
-			else
-				failCount++;
+			int x = rng.nextInt(3);
+			if (doors[x].equals("Dud"))
+			{
+				if (doors[x].equals("Prize"))
+					winCount++;
+				else
+					failCount++;
+			}
+			else winCount++;
 		}
 		
 		//calculates win percent
