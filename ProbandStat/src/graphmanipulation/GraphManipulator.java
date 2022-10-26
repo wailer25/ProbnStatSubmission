@@ -68,7 +68,7 @@ public class GraphManipulator {
 		
 		while(sc.hasNextLine())
 		{
-			String[] tmp = sc.nextLine().split(", ");
+			String[] tmp = sc.nextLine().split(",| ");
 			double x = Double.parseDouble(tmp[0]);
 			double y = Double.parseDouble(tmp[1]);
 			
@@ -113,14 +113,14 @@ public class GraphManipulator {
 		
 		while (sc.hasNextLine())
 		{
-			String[] tmp = sc.nextLine().split(", ");
+			String[] tmp = sc.nextLine().split(",| ");
 			double x = Double.parseDouble(tmp[0]);
 			double y = Double.parseDouble(tmp[1]);
 			
-			if (i == range * 2)
+			if (i == range * 2 + 1)
 			{
-				avgX = avgX / (range * 2); 
-				avgY = avgY / (range * 2); 
+				avgX = avgX / (range * 2 + 1); 
+				avgY = avgY / (range * 2 + 1); 
 
 				
 				bf.write(avgX + ", " + avgY);

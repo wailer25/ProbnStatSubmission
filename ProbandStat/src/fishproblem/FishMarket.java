@@ -118,7 +118,7 @@ public class FishMarket {
 		
 		while(sc.hasNextLine())
 		{
-			String[] tmp = sc.nextLine().split(", ");
+			String[] tmp = sc.nextLine().split(",| ");
 			
 			if (tmp[1].equals("Fish"))
 				market.add(new Fish(Double.parseDouble(tmp[2]), Double.parseDouble(tmp[3])));
