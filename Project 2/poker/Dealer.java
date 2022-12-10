@@ -490,7 +490,8 @@ public class Dealer {
 				System.out.print(c + " ");
 			System.out.println();
 			System.out.println("You have earned " + gamble(p, bet) + " chips back");
-			
+			retrieveHand(p);
+			shuffle();
 			if(p.getChips() == 0)
 			{
 				System.out.println("The house always wins");
